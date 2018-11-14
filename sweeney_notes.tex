@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.25in]{geometry}
+
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage[round]{natbib}
+\usepackage{indentfirst}
+\usepackage{parskip}
+\usepackage{booktabs}
+\raggedbottom
+\raggedright
+\setlength\parindent{2em}
+
+
+\begin{document}
+
+\section{Temperature and mortality}
+
+\subsection*{\citep{Deschenes2014} Temperature, human health, and adaptation: A review of the empirical literature}
+
+adaptation... "refers to the set of actions that are taken in order to reduce the health impacts of exposure to extreme weather events or changes in climate." 
+
+harvesting... "or short term mortality displacement refers to temporal advancement of death among persons who are already ill or at high risk of dying" In the context of temperature vs. mortality. Heat may "harvest" deaths that would've happened in the coming days causing an immediate uptick in mortality with a drop to lower than normal mortality in subsequent days. 
+
+focus: health impacts and adaptation driven by exposure to extreme temperatures. Where extreme temperature cause a reduction in health measured by excess mortality. Other studies also use hospitalizations as a metric of reduction in health.
+
+limitations: 
+
+\begin{itemize}
+\item[--] "lower level" health effects are not considered. These may affect both quality of life, incidents of chronic illness, and productivity. 
+\item[--] only a handful of potential adaptations has been described in the literature
+\item[--] internal validity is well established (temperature is not effected by health, and is conditional only on time and location), this has not been established for projections (i.e. external validity).
+\end{itemize}
+
+summarized results: 
+
+\begin{itemize}
+\item[--] heat impacts on mortality are immediate. exposure to hot temperature extremes increases mortality without a lag. 
+\item[--] cold impacts on mortality are cumulative, indicating delayed effects. 
+\item[--] harvesting effects are stronger for extreme heat than extreme cold
+\end{itemize}
+
+
+methodological issues (identified by the author) note: these have to do with extrapolating the temperature mortality relationship into the future.
+
+\begin{enumerate}
+\item What are the health outcomes analyzed? What type of model is being used. E.g. using panel data and a fixed effect model to control for permanent time-invariant and geographical differences between groups. I think this is most closely related to a cohort study in ecology. In public health, data is generally at a smaller scale with city level daily mortality counts. Methods differ mostly in terms of scale.
+\item How is exposure to temperature modeled? Mortality is a result of excessive temperature-related stress. However, this stress cannot be directly measured. Most studies in economics/public health use air temperature as a proxy for exposure. Exposure is generally modeled using splines, or temperature-day bins. 
+\item What is the research design and how does it address the main statistical challenges? Cannot use a typical control based structure in analysis. Relate daily mortality rates or counts (generally at the city level). Spline models and poisson regression models. 
+\item What measures of adaptation are considered in the analysis? Can include adaptations at multiple levels (household, community, etc.). Much of this is poorly understood because there are "few credible opportunities to combine large scale real world data on adaptive behaviors with data on health outcomes over long periods of time. 
+\item External validity and projected health impacts of climate change? I.e. are models that describe past temperature-mortality trends valid for projection? They describe extremes within a static system, rather than change to the system itself. May overestimate effects because long-term changes are more amenable to adaptation. 
+\end{enumerate}
+
+common approaches 
+\begin{table}[h]
+	\caption{Common approaches to modeling the temperature-mortality relationship in cities.}
+	\centering
+	\label{approaches}
+	\begin{tabular}{p{1.75in}p{1.75in}p{1.75in}}
+		\toprule
+		Data source & Measure of temperature & Methods \\
+		\midrule
+		National center for health statistics (NCHS). Cause of death, death rate, infant birth rate. Scales: daily, monthly, annual; county, state levels. & & \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+
+
+
+\subsection*{\citep{Schwartz2004} Hospital admissions for heat disease. The effects of temperature and humidity.}
+\bibliography{/Users/allen/Documents/articles/library}
+\bibliographystyle{apalike}
+
+\end{document}  
